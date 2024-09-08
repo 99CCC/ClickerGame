@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbsnjnolqq3ay"]
+
+[ext_resource type="Script" path="res://GameManager.cs" id="1_x7cih"]
+[ext_resource type="PackedScene" uid="uid://c1egthnu1puvw" path="res://Features/ClickObject/ClickObject.tscn" id="2_hqxdt"]
+[ext_resource type="PackedScene" uid="uid://yqtneaune4q0" path="res://Features/UpgradePanel/UpgradePanel.tscn" id="3_5jgeg"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_x7cih")
+
+[node name="ClickObject" parent="." instance=ExtResource("2_hqxdt")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 586.0
+offset_top = 258.0
+offset_right = 586.0
+offset_bottom = 258.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UpgradePanel" parent="." instance=ExtResource("3_5jgeg")]
+offset_left = 997.0
+offset_top = 81.0
+offset_right = 997.0
+offset_bottom = 81.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

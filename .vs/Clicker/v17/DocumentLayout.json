@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\StreamProject\\clicker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|d:\\streamproject\\clicker\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|solutionrelative:gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|d:\\streamproject\\clicker\\features\\clickobject\\clickobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|solutionrelative:features\\clickobject\\clickobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|d:\\streamproject\\clicker\\items\\clicker\\clicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|solutionrelative:items\\clicker\\clicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|d:\\streamproject\\clicker\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|solutionrelative:items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|d:\\streamproject\\clicker\\features\\upgradepanel\\upgradepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|solutionrelative:features\\upgradepanel\\upgradepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|d:\\streamproject\\clicker\\items\\autoclicker\\autoclicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B4F2CC8-5DEF-4AAB-88F4-05136C3D7B83}|Clicker.csproj|solutionrelative:items\\autoclicker\\autoclicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AutoClicker.cs",
+              "DocumentMoniker": "D:\\StreamProject\\clicker\\Items\\AutoClicker\\AutoClicker.cs",
+              "RelativeDocumentMoniker": "Items\\AutoClicker\\AutoClicker.cs",
+              "ToolTip": "D:\\StreamProject\\clicker\\Items\\AutoClicker\\AutoClicker.cs",
+              "RelativeToolTip": "Items\\AutoClicker\\AutoClicker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T19:49:21.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\StreamProject\\clicker\\Items\\Item.cs",
+              "RelativeDocumentMoniker": "Items\\Item.cs",
+              "ToolTip": "D:\\StreamProject\\clicker\\Items\\Item.cs",
+              "RelativeToolTip": "Items\\Item.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA0wB0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T19:43:56.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpgradePanel.cs",
+              "DocumentMoniker": "D:\\StreamProject\\clicker\\Features\\UpgradePanel\\UpgradePanel.cs",
+              "RelativeDocumentMoniker": "Features\\UpgradePanel\\UpgradePanel.cs",
+              "ToolTip": "D:\\StreamProject\\clicker\\Features\\UpgradePanel\\UpgradePanel.cs",
+              "RelativeToolTip": "Features\\UpgradePanel\\UpgradePanel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwB4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T19:37:16.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\StreamProject\\clicker\\GameManager.cs",
+              "RelativeDocumentMoniker": "GameManager.cs",
+              "ToolTip": "D:\\StreamProject\\clicker\\GameManager.cs",
+              "RelativeToolTip": "GameManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T16:27:50.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clicker.cs",
+              "DocumentMoniker": "D:\\StreamProject\\clicker\\Items\\Clicker\\Clicker.cs",
+              "RelativeDocumentMoniker": "Items\\Clicker\\Clicker.cs",
+              "ToolTip": "D:\\StreamProject\\clicker\\Items\\Clicker\\Clicker.cs",
+              "RelativeToolTip": "Items\\Clicker\\Clicker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T13:25:10.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClickObject.cs",
+              "DocumentMoniker": "D:\\StreamProject\\clicker\\Features\\ClickObject\\ClickObject.cs",
+              "RelativeDocumentMoniker": "Features\\ClickObject\\ClickObject.cs",
+              "ToolTip": "D:\\StreamProject\\clicker\\Features\\ClickObject\\ClickObject.cs",
+              "RelativeToolTip": "Features\\ClickObject\\ClickObject.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T13:05:14.004Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

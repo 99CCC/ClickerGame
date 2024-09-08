@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://yqtneaune4q0"]
+
+[ext_resource type="Script" path="res://Features/UpgradePanel/UpgradePanel.cs" id="1_1vm1v"]
+
+[node name="UpgradePanel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1vm1v")
+
+[node name="_purchaseClicker" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -127.5
+offset_right = 127.5
+offset_bottom = 120.0
+grow_horizontal = 2
+text = "Purchase Clicker-Upgrade
+Cost: 0
+Level: 0"
+
+[node name="_purchaseAutoClicker" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -127.5
+offset_top = 124.0
+offset_right = 127.5
+offset_bottom = 244.0
+grow_horizontal = 2
+text = "Purchase AutoClicker
+Cost: 0
+Level: 0"
+
+[node name="_purchaseGrandma" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -127.5
+offset_top = 246.0
+offset_right = 127.5
+offset_bottom = 366.0
+grow_horizontal = 2
+text = "Purchase Grandma
+Cost: 0
+Level: 0"
