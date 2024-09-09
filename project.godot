@@ -19,9 +19,23 @@ config/icon="res://icon.svg"
 
 GameManager="*res://GameManager.cs"
 
+[display]
+
+window/size/viewport_width=1720
+window/size/viewport_height=880
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [dotnet]
 
 project/assembly_name="Clicker"
+
+[input]
+
+leftMouseButton={
+"deadzone": 0.5,
+"events": []
+}
 
 [rendering]
 

@@ -11,12 +11,12 @@ public partial class UpgradePanel : Control
     public override void _Ready()
     {
         //Clicker SetUp
-        _purchaseClicker = GetNode<Button>("_purchaseClicker");
+        _purchaseClicker = GetNode<Button>("ScrollContainer/VBoxContainer/_purchaseClicker");
         _purchaseClicker.Text = $"{GameManager.Instance._clicker.Name} Upgrade\nCost: {GameManager.Instance._clicker.Cost}\nLevel: {GameManager.Instance._clicker.Level}";
         _purchaseClicker.Pressed += () => PurchaseUpgrade(GameManager.Instance._clicker, _purchaseClicker);
 
         //Auto Clicker SetUp
-        _purchaseAutoClicker = GetNode<Button>("_purchaseAutoClicker");
+        _purchaseAutoClicker = GetNode<Button>("ScrollContainer/VBoxContainer/_purchaseAutoClicker");
         _purchaseAutoClicker.Text = $"{GameManager.Instance._autoClicker.Name} Upgrade\nCost: {GameManager.Instance._autoClicker.Cost}\nLevel: {GameManager.Instance._autoClicker.Level}";
         _purchaseAutoClicker.Pressed += () => PurchaseUpgrade(GameManager.Instance._autoClicker, _purchaseAutoClicker);
 

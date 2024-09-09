@@ -5,45 +5,147 @@
 [node name="UpgradePanel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+size_flags_horizontal = 0
+size_flags_vertical = 8
 script = ExtResource("1_1vm1v")
 
-[node name="_purchaseClicker" type="Button" parent="."]
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -127.5
-offset_right = 127.5
-offset_bottom = 120.0
+offset_right = 330.0
+offset_bottom = 885.0
 grow_horizontal = 2
-text = "Purchase Clicker-Upgrade
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="_purchaseClicker" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Clicker-Upgrade (Cursor)
 Cost: 0
 Level: 0"
+text_overrun_behavior = 1
 
-[node name="_purchaseAutoClicker" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -127.5
-offset_top = 124.0
-offset_right = 127.5
-offset_bottom = 244.0
-grow_horizontal = 2
+[node name="_purchaseAutoClicker" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
 text = "Purchase AutoClicker
 Cost: 0
 Level: 0"
 
-[node name="_purchaseGrandma" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -127.5
-offset_top = 246.0
-offset_right = 127.5
-offset_bottom = 366.0
-grow_horizontal = 2
+[node name="_purchaseGrandma" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
 text = "Purchase Grandma
+Cost: 0
+Level: 0"
+
+[node name="_purchaseFarm" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Farm
+Cost: 0
+Level: 0"
+
+[node name="_purchaseMine" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Mine
+Cost: 0
+Level: 0"
+
+[node name="_purchaseFactory" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Factory
+Cost: 0
+Level: 0"
+
+[node name="_purchaseBank" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Bank
+Cost: 0
+Level: 0"
+
+[node name="_purchaseTemple" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Temple
+Cost: 0
+Level: 0"
+
+[node name="_purchaseWizardTower" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Wizard Tower
+Cost: 0
+Level: 0"
+
+[node name="_purchaseShipment" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Shipment
+Cost: 0
+Level: 0"
+
+[node name="_purchaseAlchemyLab" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Alchemy Lab
+Cost: 0
+Level: 0"
+
+[node name="_purchasePortal" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Portal
+Cost: 0
+Level: 0"
+
+[node name="_purchaseTimeMachine" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Time Machine
+Cost: 0
+Level: 0"
+
+[node name="_purchaseAntimatterCondenser" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Antimatter Condenser
+Cost: 0
+Level: 0"
+
+[node name="_purchasePrism" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Prism
+Cost: 0
+Level: 0"
+
+[node name="_purchaseChancemaker" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Chancemaker
+Cost: 0
+Level: 0"
+
+[node name="_purchaseFractalEngine" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Fractal Engine
+Cost: 0
+Level: 0"
+
+[node name="_purchaseJavaScriptConsole" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase JavaScriptConsole
+Cost: 0
+Level: 0"
+
+[node name="_purchaseIdleverse" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Idleverse
+Cost: 0
+Level: 0"
+
+[node name="_purchaseCortexBaker" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase Cortex Baker
+Cost: 0
+Level: 0"
+
+[node name="_purchaseYou" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Purchase You
 Cost: 0
 Level: 0"

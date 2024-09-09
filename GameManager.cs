@@ -12,7 +12,7 @@ public partial class GameManager : Node
     
     
     public ClickObject _clickObject;
-    public UpgradePanel _upgradePanel;
+    public VBoxContainer _upgradePanel;
 
     public Clicker _clicker;
     public AutoClicker _autoClicker;
@@ -25,7 +25,7 @@ public partial class GameManager : Node
         //Getting Node because it has a scene, 
         //then the scene allows you to access the methods within the scenes nodes
         _clickObject = GetNode<ClickObject>("/root/Main/ClickObject");
-        _upgradePanel = GetNode<UpgradePanel>("/root/Main/UpgradePanel");
+        _upgradePanel = GetNode<VBoxContainer>("/root/Main/UpgradePanel/ScrollContainer/VBoxContainer");
 
         //Newing this class, because its a CS script and theres no Node to be gotten
         _clicker = new Clicker();

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceroy0t6uxrn4"]
+
+[ext_resource type="Texture2D" uid="uid://b08qi4enpdf4c" path="res://Assets/Cookie.png" id="1_7f7ov"]
+[ext_resource type="Script" path="res://Features/Cookie/CookieSprite2D.cs" id="3_pwqsy"]
+
+[node name="Cookie" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_7f7ov")
+script = ExtResource("3_pwqsy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-22, -126, -22, -124.5, -49.3, -116, -52.6, -116, -76.6, -101, -78.9, -101, -105.9, -72, -107.4, -72, -123.4, -27, -124.6, -27, -126, -21.2, -126, 15.5, -123.2, 21, -123, 36.5, -120, 42.5, -120, 46.6, -109, 64.5, -109, 66.8, -81, 96.8, -81, 98.1, -58, 113.1, -58, 114.6, -14, 125.5, -14, 127, 14.3, 127, 31.3, 122, 40.6, 122, 46.6, 118, 50.6, 118, 72.7, 103, 74.8, 103, 94.7, 85, 96.2, 85, 113.2, 52, 114.5, 52, 123.5, 18, 125, 18, 125, -13.3, 120, -32, 120, -36.5, 106, -65.5, 106, -67.7, 89, -87.8, 89, -88.9, 72, -103.9, 72, -105.3, 44, -117.3, 44, -118.6, 15, -124.7, 15, -126)
