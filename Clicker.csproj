@@ -7,5 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Features\Cookie\" />
+    <Folder Include="Features\Labels\" />
   </ItemGroup>
 </Project>

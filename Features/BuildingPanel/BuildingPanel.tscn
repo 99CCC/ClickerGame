@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://yqtneaune4q0"]
 
-[ext_resource type="Script" path="res://Features/UpgradePanel/UpgradePanel.cs" id="1_1vm1v"]
+[ext_resource type="Script" path="res://Features/BuildingPanel/BuildingPanel.cs" id="1_1vm1v"]
 
-[node name="UpgradePanel" type="Control"]
+[node name="BuildingPanel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 size_flags_horizontal = 0
@@ -22,6 +22,13 @@ grow_horizontal = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Add in Buy/Sell Toggle + Select Quantity"
 
 [node name="_purchaseClicker" type="Button" parent="ScrollContainer/VBoxContainer"]
 layout_mode = 2

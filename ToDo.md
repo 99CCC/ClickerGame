@@ -1,10 +1,6 @@
 ## DOING
 - 3. Percentage Logic (more thought through scaling for cost & power)
-- 5. Switching Button to a Png
-- 6. Wireframe
-	- 6.5 Write down tasks from wireframe
-- 7. Clean up scenes and files
-	7.5 Structur for Labels and Cookie (separate concerns)
+- 5. Switching Button to a Png (+animation)
 
 ## Features
 - Label: Name of Bakery
@@ -47,3 +43,7 @@
 - 2. (Maybe off stream) Set up version control (Git)
 - 4. Scrollbar for the upgradePanel
 	- 5.5. Make a clickable png/sprite
+	- 6. Wireframe
+	- 6.5 Write down tasks from wireframe
+	- 7. Clean up scenes and files
+	7.5 Structure for Labels and Cookie (separate concerns)

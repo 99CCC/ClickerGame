@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs6gq377tlx0f"]
+
+[ext_resource type="Texture2D" uid="uid://betlvo7kfxjqx" path="res://Assets/labelFill.png" id="1_u2u7q"]
+[ext_resource type="Script" path="res://Features/Labels/CounterContainer.cs" id="2_rffkn"]
+[ext_resource type="Script" path="res://Features/Labels/CpsContainer.cs" id="3_r2a5d"]
+
+[node name="CounterLabel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(615, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_u2u7q")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
+clip_contents = true
+layout_mode = 0
+offset_right = 615.0
+offset_bottom = 100.0
+alignment = 1
+
+[node name="CounterContainer" type="HBoxContainer" parent="TextureRect/VBoxContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+script = ExtResource("2_rffkn")
+
+[node name="_counterLabel" type="Label" parent="TextureRect/VBoxContainer/CounterContainer"]
+custom_minimum_size = Vector2(60, 1)
+layout_direction = 2
+layout_mode = 2
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="_counterTextLabel" type="Label" parent="TextureRect/VBoxContainer/CounterContainer"]
+custom_minimum_size = Vector2(75, 50)
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Cookies"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CpsContainer" type="HBoxContainer" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+script = ExtResource("3_r2a5d")
+
+[node name="_cpsTextLabel" type="Label" parent="TextureRect/VBoxContainer/CpsContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_direction = 2
+layout_mode = 2
+text = "per second:"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="_cpsLabel" type="Label" parent="TextureRect/VBoxContainer/CpsContainer"]
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

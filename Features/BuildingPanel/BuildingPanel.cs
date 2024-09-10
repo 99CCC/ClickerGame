@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Reflection.Emit;
 
-public partial class UpgradePanel : Control
+public partial class BuildingPanel : Control
 {
 
     public Button _purchaseClicker;
@@ -29,7 +29,7 @@ public partial class UpgradePanel : Control
         {
             int cost = item.Cost;
             item.Upgrade();
-            GameManager.Instance.removeClicks(cost);
+            GameManager.Instance._counterContainer.RemoveCookie(cost);
             cost = item.Cost;
             int level = item.Level;
             button.SetText($"{item.Name} Upgrade\nCost: {cost}\nLevel: {level}");

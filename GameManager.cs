@@ -1,7 +1,5 @@
 using Godot;
-using System;
-using System.Reflection.Emit;
-//Demo Commit
+
 public partial class GameManager : Node
 {
     public static GameManager Instance;
@@ -10,9 +8,10 @@ public partial class GameManager : Node
 
     public  int _counter = 0;
     
-    
-    public ClickObject _clickObject;
-    public VBoxContainer _upgradePanel;
+    public CounterContainer _counterContainer;
+    public CpsContainer _cpsContainer;
+
+    public VBoxContainer _buildingPanel;
 
     public Clicker _clicker;
     public AutoClicker _autoClicker;
@@ -22,43 +21,25 @@ public partial class GameManager : Node
     {
         totalCPS = 0;
 
-        //Getting Node because it has a scene, 
-        //then the scene allows you to access the methods within the scenes nodes
-        _clickObject = GetNode<ClickObject>("/root/Main/ClickObject");
-        _upgradePanel = GetNode<VBoxContainer>("/root/Main/UpgradePanel/ScrollContainer/VBoxContainer");
+        _counterContainer = GetNode<CounterContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CounterContainer");
+        _cpsContainer = GetNode<CpsContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CpsContainer");
 
-        //Newing this class, because its a CS script and theres no Node to be gotten
+        _buildingPanel = GetNode<VBoxContainer>("/root/Main/BuildingPanel/ScrollContainer/VBoxContainer");
+
         _clicker = new Clicker();
         _autoClicker = new AutoClicker();
 
-        //Need to instansiate the GameManager, its set at singleton by AutoLoading (in Godot Editor ->
-        //Project Settings/Globals/Autoload add the Script that has the class you need to be instansiated
-        //Then the Global Variable Box doesnt to anything for C#, and we therefore must write the code below!
-        //Also remember to add it as an attribute up above
         Instance = this;
 
         var timer = GetNode<Timer>("/root/Main/Timer");
         timer.Timeout += TimedOut;
-    }
 
-    public void AddClicks()
-    {
-        _counter += _clicker.Power;
-        _clickObject._counterLabel.SetText(_counter.ToString());
-    }
-
-    public void removeClicks(int cost)
-    {
-        _counter -= cost;
-        _clickObject._counterLabel.SetText(_counter.ToString());
     }
 
     private void TimedOut()
     {
-        GD.Print("test");
         _counter += totalCPS;
-        GD.Print(totalCPS);
-        _clickObject._counterLabel.SetText(_counter.ToString());
+        _counterContainer.AddCookieCPStoCounter();
     }
 
 }

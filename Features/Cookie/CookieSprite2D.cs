@@ -8,8 +8,6 @@ public partial class CookieSprite2D : Sprite2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		//_cookie = this;
-		//_label = GetNode<Label>("/root/Features/Cookie")
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,7 +20,8 @@ public partial class CookieSprite2D : Sprite2D
 				if (GetRect().HasPoint(ToLocal(mouseEvent.Position)))
 				{
                     GD.Print("Cookie clicked");
-					GameManager.Instance.AddClicks();
+					//GameManager.Instance.AddClicks();
+					GameManager.Instance._counterContainer.AddCookie();
                 }
 				
 			}

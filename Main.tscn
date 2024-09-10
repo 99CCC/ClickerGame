@@ -1,28 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://bbsnjnolqq3ay"]
 
 [ext_resource type="Script" path="res://GameManager.cs" id="1_x7cih"]
-[ext_resource type="PackedScene" uid="uid://c1egthnu1puvw" path="res://Features/ClickObject/ClickObject.tscn" id="2_hqxdt"]
-[ext_resource type="PackedScene" uid="uid://yqtneaune4q0" path="res://Features/UpgradePanel/UpgradePanel.tscn" id="3_5jgeg"]
+[ext_resource type="PackedScene" uid="uid://yqtneaune4q0" path="res://Features/BuildingPanel/BuildingPanel.tscn" id="3_5jgeg"]
 [ext_resource type="Texture2D" uid="uid://d4kdyl3v72453" path="res://WireFrame.png" id="4_7kgaq"]
+[ext_resource type="PackedScene" uid="uid://cs6gq377tlx0f" path="res://Features/Labels/CounterLabel.tscn" id="5_4w4dr"]
 [ext_resource type="PackedScene" uid="uid://ceroy0t6uxrn4" path="res://Features/Cookie/Cookie.tscn" id="5_5dx3n"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_x7cih")
 
-[node name="ClickObject" parent="." instance=ExtResource("2_hqxdt")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 220.0
-offset_top = 234.0
-offset_right = 220.0
-offset_bottom = 234.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="UpgradePanel" parent="." instance=ExtResource("3_5jgeg")]
+[node name="BuildingPanel" parent="." instance=ExtResource("3_5jgeg")]
 offset_left = 1392.0
 offset_right = 1392.0
 
@@ -36,4 +23,6 @@ scale = Vector2(1, 1.09259)
 texture = ExtResource("4_7kgaq")
 
 [node name="Cookie" parent="." instance=ExtResource("5_5dx3n")]
-position = Vector2(876, 424)
+position = Vector2(331, 426)
+
+[node name="CounterLabel" parent="." instance=ExtResource("5_4w4dr")]
