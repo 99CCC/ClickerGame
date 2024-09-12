@@ -14,8 +14,9 @@ public partial class GameManager : Node
     public VBoxContainer _buildingPanel;
 
     public Clicker _clicker;
+    public CashButton _cashButton;
     public AutoClicker _autoClicker;
-
+    
 
     public override void _Ready()
     {
@@ -23,8 +24,8 @@ public partial class GameManager : Node
 
         _counterContainer = GetNode<CounterContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CounterContainer");
         _cpsContainer = GetNode<CpsContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CpsContainer");
-
         _buildingPanel = GetNode<VBoxContainer>("/root/Main/BuildingPanel/ScrollContainer/VBoxContainer");
+        _cashButton = GetNode<CashButton>("/root/Main/CashButton/Area2D/Sprite2D");
 
         _clicker = new Clicker();
         _autoClicker = new AutoClicker();
@@ -39,7 +40,7 @@ public partial class GameManager : Node
     private void TimedOut()
     {
         _counter += totalCPS;
-        _counterContainer.AddCookieCPStoCounter();
+        _counterContainer.AddCashCPStoCounter();
     }
 
 }

@@ -11,20 +11,20 @@ public partial class CounterContainer : HBoxContainer
 		_counterLabel = GetNode<Label>("_counterLabel");
 	}
 
-    public void AddCookie()
+    public void AddCash()
     {
         GameManager.Instance._counter += GameManager.Instance._clicker.Power;
         _counterLabel.Text = (GameManager.Instance._counter.ToString());
     }
 
-    public void AddCookieCPStoCounter()
+    public void AddCashCPStoCounter()
     {
         GameManager.Instance._counter += GameManager.Instance.totalCPS;
         _counterLabel.SetText(GameManager.Instance._counter.ToString());
     }
 
 
-    public void RemoveCookie(int cost)
+    public void RemoveCash(int cost)
     {
         GameManager.Instance._counter -= cost;
         _counterLabel.SetText(GameManager.Instance._counter.ToString());

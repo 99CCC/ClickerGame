@@ -6,7 +6,7 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Features\Cookie\" />
+    <Folder Include="Features\CashButton\" />
     <Folder Include="Features\Labels\" />
   </ItemGroup>
 </Project>

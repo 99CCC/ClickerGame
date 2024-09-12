@@ -1,38 +1,34 @@
 ## DOING
-- 3. Percentage Logic (more thought through scaling for cost & power)
-- 5. Switching Button to a Png (+animation)
+	2. Add ClickPower as a visual Print (that tweens out of existence)
 
 ## Features
-- Label: Name of Bakery
-- Label: Counter of Clicks
-	Func: Yes
-- Label: Total CPS
-	Func: Yes
-- 2DSprite: Cookie
-	Func: Yes (missing animation)
-- Animated 2DSprite?: Milk
-- TextureButton: Options
-- TextureButton: Stats
-- TextField: RNG messages
-- TextureButton: Info
-- TextureButton: Legacy
-- Label: Store Title
-- VBox: Upgrades
-- window?: Purchase/sell toggle + quantity
-- VBox: UpgradePanel **Refactor it to buildingPanel
-	-Func: Yes
-	
+	1. Incremental Money Clicker
+		Func: Yes
+		Anim: No
+	2. Life Cycle
+	3. Mobs: Grabbing money and walking out
+	4. Mobs: Removable
+	5. Mobs: Scaling (quantity & health?)
+	6. Upgradepanel
+		5.1 Retractable
+	7. OptionPanel
+		6.1 Retractable
+	8. Wall
+		7.1 Repairable
+		7.2 Upgradable
+
 ## FUTURE IDEAS
-- a. Random Click Events ie the golden cookie
+- a. Random Click Events ie the golden cookie(Financial Crisis)
 - b. Settings tab
 - c. volume control/add a dummy soundtrack
-- d. figure out respone windows
-- e. Add in float or percentage increase logic (might be able to do with just int and percentage calcs)
 - f. UML: Unified Modelling Language
 - g. WBS: Work Breakdown Structure Diagram
 - h. Save States: 3 Save Slots
 
 ## DONE
+- 1. Switching Button to a Png (+animation)
+
+## DONE (P.o.C Clicker - Before Original Refactor to new game)
 - 1. Set up a running main.cs that pops up a window (tscn) -DONE
 - 3. Refactor: Singleton & Feature based design
 - 4. Need to set the text of the upgradePanel on Ready (to correct costs)

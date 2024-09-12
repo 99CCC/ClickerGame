@@ -9,14 +9,14 @@ public partial class CpsContainer : HBoxContainer
 		_cpsLabel = GetNode<Label>("_cpsLabel");
 	}
 
-	public void AddCookieCPSTotal(int power)
+	public void AddCashCPSTotal(int power)
 	{
 		GameManager.Instance.totalCPS += power;
-		addCookieCPStoLabel();
+		addCashCPStoLabel();
 	}
 
 
-    public void addCookieCPStoLabel()
+    public void addCashCPStoLabel()
 	{
 		_cpsLabel.Text = GameManager.Instance.totalCPS.ToString();
 	}

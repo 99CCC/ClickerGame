@@ -29,7 +29,7 @@ public partial class BuildingPanel : Control
         {
             int cost = item.Cost;
             item.Upgrade();
-            GameManager.Instance._counterContainer.RemoveCookie(cost);
+            GameManager.Instance._counterContainer.RemoveCash(cost);
             cost = item.Cost;
             int level = item.Level;
             button.SetText($"{item.Name} Upgrade\nCost: {cost}\nLevel: {level}");

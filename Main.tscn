@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://GameManager.cs" id="1_x7cih"]
 [ext_resource type="PackedScene" uid="uid://yqtneaune4q0" path="res://Features/BuildingPanel/BuildingPanel.tscn" id="3_5jgeg"]
-[ext_resource type="Texture2D" uid="uid://d4kdyl3v72453" path="res://WireFrame.png" id="4_7kgaq"]
 [ext_resource type="PackedScene" uid="uid://cs6gq377tlx0f" path="res://Features/Labels/CounterLabel.tscn" id="5_4w4dr"]
-[ext_resource type="PackedScene" uid="uid://ceroy0t6uxrn4" path="res://Features/Cookie/Cookie.tscn" id="5_5dx3n"]
+[ext_resource type="PackedScene" uid="uid://ceroy0t6uxrn4" path="res://Features/CashButton/CashButton.tscn" id="5_5dx3n"]
+[ext_resource type="Texture2D" uid="uid://dm7ov7lp04at5" path="res://Assets/WireFrame.png" id="5_mggxj"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_x7cih")
@@ -16,13 +16,15 @@ offset_right = 1392.0
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
-[node name="WireFrame" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(958, 490)
-scale = Vector2(1, 1.09259)
-texture = ExtResource("4_7kgaq")
-
-[node name="Cookie" parent="." instance=ExtResource("5_5dx3n")]
-position = Vector2(331, 426)
+[node name="CashButton" parent="." instance=ExtResource("5_5dx3n")]
+position = Vector2(831, 407)
 
 [node name="CounterLabel" parent="." instance=ExtResource("5_4w4dr")]
+offset_left = 530.0
+offset_right = 530.0
+
+[node name="WireFrame" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.895833, 0.819444)
+texture = ExtResource("5_mggxj")
+centered = false

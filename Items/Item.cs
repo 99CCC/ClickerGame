@@ -27,7 +27,7 @@ public abstract class Item
         Power *= PowerTrend;
         Cost *= CostTrend;
         Level++;
-        GameManager.Instance._cpsContainer.AddCookieCPSTotal(Power);
+        GameManager.Instance._cpsContainer.AddCashCPSTotal(Power);
         GD.Print("Upgrade called");
     }
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4kdyl3v72453"
-path="res://.godot/imported/WireFrame.png-9be1a479d60577df62e33201e080fde2.ctex"
+uid="uid://dm7ov7lp04at5"
+path="res://.godot/imported/WireFrame.png-b9be8173d0ab806414d641abbfa1b53a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://WireFrame.png"
-dest_files=["res://.godot/imported/WireFrame.png-9be1a479d60577df62e33201e080fde2.ctex"]
+source_file="res://Assets/WireFrame.png"
+dest_files=["res://.godot/imported/WireFrame.png-b9be8173d0ab806414d641abbfa1b53a.ctex"]
 
 [params]
 
