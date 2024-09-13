@@ -6,7 +6,7 @@ public partial class Clicker : Item
 
     public Clicker()
     {
-        Name = "Clicker";
+        Name = "ClickPower";
         Level = 1;
         Power = 1;
         Cost = 10;

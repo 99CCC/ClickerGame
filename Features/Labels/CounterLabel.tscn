@@ -55,18 +55,16 @@ alignment = 1
 script = ExtResource("3_r2a5d")
 
 [node name="_cpsTextLabel" type="Label" parent="TextureRect/VBoxContainer/CpsContainer"]
-custom_minimum_size = Vector2(150, 0)
 layout_direction = 2
 layout_mode = 2
+size_flags_horizontal = 0
 text = "cash per second:"
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="_cpsLabel" type="Label" parent="TextureRect/VBoxContainer/CpsContainer"]
 layout_direction = 3
 layout_mode = 2
-size_flags_horizontal = 0
+size_flags_horizontal = 8
 text = "0"
-horizontal_alignment = 1
 vertical_alignment = 1

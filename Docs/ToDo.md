@@ -1,5 +1,8 @@
 ## DOING
 	2. Add ClickPower as a visual Print (that tweens out of existence)
+	3. Fix Text flowing outside of containers
+	4. Modulate the Buildingpanel
+		4.1 Copy node and paste in for loop?
 
 ## Features
 	1. Incremental Money Clicker

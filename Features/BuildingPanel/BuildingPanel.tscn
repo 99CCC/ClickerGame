@@ -14,145 +14,210 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_right = 330.0
-offset_bottom = 885.0
+offset_right = 340.0
+offset_bottom = 566.0
 grow_horizontal = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Add in Buy/Sell Toggle + Select Quantity"
 
 [node name="_purchaseClicker" type="Button" parent="ScrollContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Purchase Clicker-Upgrade (Cursor)
 Cost: 0
 Level: 0"
 text_overrun_behavior = 1
 
-[node name="_purchaseAutoClicker" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_purchaseMoneyPrinter" type="Button" parent="ScrollContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
-text = "Purchase AutoClicker
+text = "Purchase MoneyPrinter
 Cost: 0
 Level: 0"
 
-[node name="_purchaseGrandma" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="VBoxContainerParent" type="VBoxContainer" parent="ScrollContainer"]
 layout_mode = 2
-text = "Purchase Grandma
-Cost: 0
-Level: 0"
 
-[node name="_purchaseFarm" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="ClickPower" type="VBoxContainer" parent="ScrollContainer/VBoxContainerParent"]
 layout_mode = 2
-text = "Purchase Farm
-Cost: 0
-Level: 0"
+alignment = 1
 
-[node name="_purchaseMine" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainerParent/ClickPower"]
+custom_minimum_size = Vector2(340, 80)
 layout_mode = 2
-text = "Purchase Mine
-Cost: 0
-Level: 0"
+size_flags_horizontal = 3
 
-[node name="_purchaseFactory" type="Button" parent="ScrollContainer/VBoxContainer"]
-layout_mode = 2
-text = "Purchase Factory
-Cost: 0
-Level: 0"
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button"]
+layout_mode = 0
+offset_right = 344.0
+offset_bottom = 77.0
+alignment = 1
 
-[node name="_purchaseBank" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_text" type="Label" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer"]
+custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
-text = "Purchase Bank
-Cost: 0
-Level: 0"
+size_flags_horizontal = 4
+text = "Purchase Click Power"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="_purchaseTemple" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer"]
+custom_minimum_size = Vector2(330, 0)
 layout_mode = 2
-text = "Purchase Temple
-Cost: 0
-Level: 0"
+alignment = 1
 
-[node name="_purchaseWizardTower" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_level" type="Label" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
-text = "Purchase Wizard Tower
-Cost: 0
-Level: 0"
+text = "Level"
+horizontal_alignment = 1
 
-[node name="_purchaseShipment" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_cost" type="Label" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
-text = "Purchase Shipment
-Cost: 0
-Level: 0"
+text = "Cost"
+horizontal_alignment = 1
 
-[node name="_purchaseAlchemyLab" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer"]
+custom_minimum_size = Vector2(330, 0)
 layout_mode = 2
-text = "Purchase Alchemy Lab
-Cost: 0
-Level: 0"
+alignment = 1
 
-[node name="_purchasePortal" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_levelVar" type="Label" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
-text = "Purchase Portal
-Cost: 0
-Level: 0"
+text = "0"
+horizontal_alignment = 1
 
-[node name="_purchaseTimeMachine" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_costVar" type="Label" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
-text = "Purchase Time Machine
-Cost: 0
-Level: 0"
+text = "0"
+horizontal_alignment = 1
 
-[node name="_purchaseAntimatterCondenser" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="MoneyPrinter" type="VBoxContainer" parent="ScrollContainer/VBoxContainerParent"]
 layout_mode = 2
-text = "Purchase Antimatter Condenser
-Cost: 0
-Level: 0"
+alignment = 1
 
-[node name="_purchasePrism" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter"]
+custom_minimum_size = Vector2(340, 80)
 layout_mode = 2
-text = "Purchase Prism
-Cost: 0
-Level: 0"
+size_flags_horizontal = 3
 
-[node name="_purchaseChancemaker" type="Button" parent="ScrollContainer/VBoxContainer"]
-layout_mode = 2
-text = "Purchase Chancemaker
-Cost: 0
-Level: 0"
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button"]
+layout_mode = 0
+offset_right = 344.0
+offset_bottom = 77.0
+alignment = 1
 
-[node name="_purchaseFractalEngine" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_text" type="Label" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button/VBoxContainer"]
+custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
-text = "Purchase Fractal Engine
-Cost: 0
-Level: 0"
+size_flags_horizontal = 4
+text = "Purchase Money Printer"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="_purchaseJavaScriptConsole" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button/VBoxContainer"]
+custom_minimum_size = Vector2(330, 0)
 layout_mode = 2
-text = "Purchase JavaScriptConsole
-Cost: 0
-Level: 0"
+alignment = 1
 
-[node name="_purchaseIdleverse" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_level" type="Label" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
-text = "Purchase Idleverse
-Cost: 0
-Level: 0"
+text = "Level"
+horizontal_alignment = 1
 
-[node name="_purchaseCortexBaker" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="_cost" type="Label" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
-text = "Purchase Cortex Baker
-Cost: 0
-Level: 0"
+text = "Cost"
+horizontal_alignment = 1
 
-[node name="_purchaseYou" type="Button" parent="ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button/VBoxContainer"]
+custom_minimum_size = Vector2(330, 0)
 layout_mode = 2
-text = "Purchase You
-Cost: 0
-Level: 0"
+alignment = 1
+
+[node name="_levelVar" type="Label" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="_costVar" type="Label" parent="ScrollContainer/VBoxContainerParent/MoneyPrinter/Button/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="Stocks" type="VBoxContainer" parent="ScrollContainer/VBoxContainerParent"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainerParent/Stocks"]
+custom_minimum_size = Vector2(340, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainerParent/Stocks/Button"]
+layout_mode = 0
+offset_right = 344.0
+offset_bottom = 77.0
+alignment = 1
+
+[node name="_text" type="Label" parent="ScrollContainer/VBoxContainerParent/Stocks/Button/VBoxContainer"]
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Purchase Money Printer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainerParent/Stocks/Button/VBoxContainer"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+alignment = 1
+
+[node name="_level" type="Label" parent="ScrollContainer/VBoxContainerParent/Stocks/Button/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+text = "Level"
+horizontal_alignment = 1
+
+[node name="_cost" type="Label" parent="ScrollContainer/VBoxContainerParent/Stocks/Button/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+text = "Cost"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/VBoxContainerParent/Stocks/Button/VBoxContainer"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+alignment = 1
+
+[node name="_levelVar" type="Label" parent="ScrollContainer/VBoxContainerParent/Stocks/Button/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="_costVar" type="Label" parent="ScrollContainer/VBoxContainerParent/Stocks/Button/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1

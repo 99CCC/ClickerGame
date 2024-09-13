@@ -11,7 +11,7 @@ public partial class GameManager : Node
     public CounterContainer _counterContainer;
     public CpsContainer _cpsContainer;
 
-    public VBoxContainer _buildingPanel;
+    public Control _buildingPanel;
 
     public Clicker _clicker;
     public CashButton _cashButton;
@@ -24,11 +24,13 @@ public partial class GameManager : Node
 
         _counterContainer = GetNode<CounterContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CounterContainer");
         _cpsContainer = GetNode<CpsContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CpsContainer");
-        _buildingPanel = GetNode<VBoxContainer>("/root/Main/BuildingPanel/ScrollContainer/VBoxContainer");
+
         _cashButton = GetNode<CashButton>("/root/Main/CashButton/Area2D/Sprite2D");
 
         _clicker = new Clicker();
         _autoClicker = new AutoClicker();
+
+        _buildingPanel = GetNode<Control>("/root/Main/BuildingPanel");
 
         Instance = this;
 

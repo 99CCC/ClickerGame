@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b33kgewm5kpls"
+valid=false
+
+[deps]
+
+source_file="res://Features/BuildingPanel/Building.csv"
+
+[params]
+
+compress=true
+delimiter=0
