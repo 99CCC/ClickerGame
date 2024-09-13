@@ -1,8 +1,8 @@
 ## DOING
 	2. Add ClickPower as a visual Print (that tweens out of existence)
-	3. Fix Text flowing outside of containers
 	4. Modulate the Buildingpanel
 		4.1 Copy node and paste in for loop?
+		4.2 Fix bug for Upgrade before calling buildingpanel done
 
 ## Features
 	1. Incremental Money Clicker
@@ -46,3 +46,4 @@
 	- 6.5 Write down tasks from wireframe
 	- 7. Clean up scenes and files
 	7.5 Structure for Labels and Cookie (separate concerns)
+		3. Fix Text flowing outside of containers

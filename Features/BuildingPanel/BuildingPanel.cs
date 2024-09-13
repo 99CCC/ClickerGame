@@ -40,19 +40,22 @@ public partial class BuildingPanel : Control
 
             for(int i = 0;i<buildingList.Count;i++){
                 buildingName = buildingList[i];
-                
-                //Item itemParam = GameManager.Instance.Item.getInstanceOfItem(buildingName);
 
                 Button button = new Button();
                 button = GetNode<Button>($"{prefixBuildingPath}{buildingName}/Button");
-                button.Pressed += () => PurchaseUpgrade(GameManager.Instance._clicker);
+
+                Item item = GameManager.Instance.itemDictionary[buildingName];
+                
+                button.Pressed += () => PurchaseUpgrade(item);
 
                 Label level = new Label();
-                level = GetNode<Label>($"{prefixBuildingPath}{buildingName}/Button/HBoxContainer2/_levelVar");
+                level = GetNode<Label>($"{prefixBuildingPath}{buildingName}/Button/VBoxContainer/HBoxContainer2/_levelVar");
+                
 
                 Label cost = new Label();
-                cost = GetNode<Label>($"{prefixBuildingPath}{buildingName}/Button/HBoxContainer2/_costVar");
-                
+                cost = GetNode<Label>($"{prefixBuildingPath}{buildingName}/Button/VBoxContainer/HBoxContainer2/_costVar");
+                cost.Text = GameManager.Instance.itemDictionary[buildingName].Cost.ToString();
+
                 object[] buildingArray = {button, level, cost};
                 buildingDict.Add(buildingName, buildingArray);
             }
@@ -69,8 +72,10 @@ public partial class BuildingPanel : Control
             Label _levelLabel = (Label)(array[1]);
             Label _costLabel = (Label)(array[2]);
 
-            item.Upgrade();
             GameManager.Instance._counterContainer.RemoveCash(item.Cost);
+            item.Upgrade();
+            GD.Print(item.Power);
+            
 
             _levelLabel.Text = item.Level.ToString();
             _costLabel.Text = item.Cost.ToString();

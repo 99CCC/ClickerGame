@@ -13,7 +13,10 @@ public partial class CounterContainer : HBoxContainer
 
     public void AddCash()
     {
-        GameManager.Instance._counter += GameManager.Instance._clicker.Power;
+        //Refactored to find the clicker via the itemDict
+        
+        GameManager.Instance._counter += GameManager.Instance.itemDictionary["ClickPower"].Power;
+
         _counterLabel.Text = (GameManager.Instance._counter.ToString());
     }
 

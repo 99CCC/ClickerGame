@@ -1,10 +1,10 @@
 using Godot;
 using System;
 
-public partial class Clicker : Item
+public partial class ClickPower : Item
 {
 
-    public Clicker()
+    public ClickPower()
     {
         Name = "ClickPower";
         Level = 1;
@@ -16,10 +16,10 @@ public partial class Clicker : Item
 
     public override void Upgrade()
     {
-        Power *= PowerTrend;
+        Power *= PowerTrend; //1 + 1*2 = 3
         Cost *= CostTrend;
         Level++;
-        GD.Print("Upgrade called");
+        GD.Print("Upgrade called from ClickPower");
         //Call updateButton.text 
     }
 

@@ -99,7 +99,7 @@ alignment = 1
 [node name="_levelVar" type="Label" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
-text = "0"
+text = "1"
 horizontal_alignment = 1
 
 [node name="_costVar" type="Label" parent="ScrollContainer/VBoxContainerParent/ClickPower/Button/VBoxContainer/HBoxContainer2"]

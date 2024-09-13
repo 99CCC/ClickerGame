@@ -1,42 +1,38 @@
 using Godot;
+using System.Collections.Generic;
+using System.IO;
 
 public partial class GameManager : Node
 {
     public static GameManager Instance;
-    private  Timer _timer;
-    public int totalCPS { get; set; }
 
-    public  int _counter = 0;
-    
     public CounterContainer _counterContainer;
     public CpsContainer _cpsContainer;
-
-    public Control _buildingPanel;
-
-    public Clicker _clicker;
     public CashButton _cashButton;
-    public AutoClicker _autoClicker;
-    
+
+    private  Timer _timer;
+    public int totalCPS = 0;
+    public  int _counter = 0;
+
+    public Dictionary<string, Item> itemDictionary;
+
 
     public override void _Ready()
     {
-        totalCPS = 0;
 
         _counterContainer = GetNode<CounterContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CounterContainer");
         _cpsContainer = GetNode<CpsContainer>("/root/Main/CounterLabel/TextureRect/VBoxContainer/CpsContainer");
-
         _cashButton = GetNode<CashButton>("/root/Main/CashButton/Area2D/Sprite2D");
 
-        _clicker = new Clicker();
-        _autoClicker = new AutoClicker();
+        ItemFactory itemFactory = new ItemFactory();
+        itemFactory.ItemListConstructor();
+        itemDictionary = itemFactory.ItemConstructor();
 
-        _buildingPanel = GetNode<Control>("/root/Main/BuildingPanel");
 
         Instance = this;
 
         var timer = GetNode<Timer>("/root/Main/Timer");
         timer.Timeout += TimedOut;
-
     }
 
     private void TimedOut()
@@ -45,4 +41,6 @@ public partial class GameManager : Node
         _counterContainer.AddCashCPStoCounter();
     }
 
+
+    
 }
