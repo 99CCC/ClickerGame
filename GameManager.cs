@@ -10,11 +10,13 @@ public partial class GameManager : Node
     public CpsContainer _cpsContainer;
     public CashButton _cashButton;
 
+
     private  Timer _timer;
     public int totalCPS = 0;
     public  int _counter = 0;
 
     public Dictionary<string, Item> itemDictionary;
+    private List<string> itemList;
 
 
     public override void _Ready()
@@ -25,8 +27,8 @@ public partial class GameManager : Node
         _cashButton = GetNode<CashButton>("/root/Main/CashButton/Area2D/Sprite2D");
 
         ItemFactory itemFactory = new ItemFactory();
-        itemFactory.ItemListConstructor();
-        itemDictionary = itemFactory.ItemConstructor();
+        itemList = itemFactory.ItemListConstructor();
+        itemDictionary = itemFactory.ItemConstructor(itemList);
 
 
         Instance = this;
@@ -37,8 +39,7 @@ public partial class GameManager : Node
 
     private void TimedOut()
     {
-        _counter += totalCPS;
-        _counterContainer.AddCashCPStoCounter();
+        _counterContainer.AddCashCPStoCounter(this.totalCPS);
     }
 
 

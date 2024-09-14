@@ -7,7 +7,7 @@ using System.IO;
     public partial class ItemFactory
     {
         private string csvPath = "./Features/BuildingPanel/Building.csv";
-        private List<string> itemList;
+        //private List<string> itemList;
         private Dictionary<string, Item> itemDictionary = new Dictionary<string, Item>();
 
     public static object CreateItem(string className)
@@ -24,13 +24,12 @@ using System.IO;
 
         }
 
-        public void ItemListConstructor()
+        public List<string> ItemListConstructor()
         {
             StreamReader reader = null;
+            List<string> itemList = new List<string>();
 
             reader = new StreamReader(File.OpenRead(csvPath));
-
-            itemList = new List<string>();
 
             while (!reader.EndOfStream)
             {
@@ -41,10 +40,11 @@ using System.IO;
                     itemList.Add(item);
                 }
             }
+        return itemList;
 
         }
 
-        public Dictionary<string, Item> ItemConstructor()
+        public Dictionary<string, Item> ItemConstructor(List<string> itemList)
         {
             for (int i = 0; i < itemList.Count; i++)
             {

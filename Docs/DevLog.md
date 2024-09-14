@@ -1,3 +1,16 @@
+## 14.09.2024
+We managed to fix the bug with the clickpower not updating, altough
+we didnt find the root cause for the CPS acting up.
+Issue is that the value of the totalCPS gets set to 12 after 2 upgrades,
+but its only possible to buy the item Moneyprinter, which would 
+give you 8 power meaning you should only have 8 CPS.
+The bug about the timer being too fast also seems to be there,
+but this might just be a symptom of the totalCPS not being assigned
+the correct value.
+BuildingPanel = 8
+CounterContainer = 12
+CpsContainer = 12
+
 ## 13.09.2024
 We managed to fix the for loop logic and have a working-ish dictionary
 only problem is that said dictionary lead the CounterCointainers functions

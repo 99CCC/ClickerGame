@@ -14,7 +14,7 @@ public partial class ClickPower : Item
         PowerTrend = 2;
     }
 
-    public override void Upgrade()
+    public override void Upgrade(Item item)
     {
         Power *= PowerTrend; //1 + 1*2 = 3
         Cost *= CostTrend;

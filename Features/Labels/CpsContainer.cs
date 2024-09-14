@@ -12,6 +12,7 @@ public partial class CpsContainer : HBoxContainer
 	public void AddCashCPSTotal(int power)
 	{
 		GameManager.Instance.totalCPS += power;
+		GD.Print("TotalCPS from CpsContainer.totalCPS ",GameManager.Instance.totalCPS, " and Power: ", power);
 		addCashCPStoLabel();
 	}
 

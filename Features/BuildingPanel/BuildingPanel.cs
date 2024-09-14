@@ -40,9 +40,9 @@ public partial class BuildingPanel : Control
 
             for(int i = 0;i<buildingList.Count;i++){
                 buildingName = buildingList[i];
-
+           
                 Button button = new Button();
-                button = GetNode<Button>($"{prefixBuildingPath}{buildingName}/Button");
+                button = GetNode<Button>($"{prefixBuildingPath}{buildingName}/Button");           
 
                 Item item = GameManager.Instance.itemDictionary[buildingName];
                 
@@ -64,21 +64,21 @@ public partial class BuildingPanel : Control
 
     public void PurchaseUpgrade(Item item)
     {
-        if (GameManager.Instance._counter >= item.Cost)
+        Item retrievedItem = GameManager.Instance.itemDictionary[item.Name];
+
+        if (GameManager.Instance._counter >= retrievedItem.Cost)
         {
-            object[] array = buildingDict[item.Name];
+            object[] array = buildingDict[retrievedItem.Name];
            
-            //Possible issue?
             Label _levelLabel = (Label)(array[1]);
             Label _costLabel = (Label)(array[2]);
 
-            GameManager.Instance._counterContainer.RemoveCash(item.Cost);
-            item.Upgrade();
-            GD.Print(item.Power);
-            
+            GameManager.Instance._counterContainer.RemoveCash(retrievedItem.Cost);
+            GameManager.Instance.itemDictionary[retrievedItem.Name].Upgrade(retrievedItem);
+            GD.Print("From BuildingPanel.PurchaseUpgrade", retrievedItem.Power);
 
-            _levelLabel.Text = item.Level.ToString();
-            _costLabel.Text = item.Cost.ToString();
+            _levelLabel.Text = retrievedItem.Level.ToString();
+            _costLabel.Text = retrievedItem.Cost.ToString();
 
         }
         else
@@ -88,16 +88,4 @@ public partial class BuildingPanel : Control
     }
 }
 
-
-/*
-          //Old CLicker setup
-        _purchaseClickPower = GetNode<Button>($"ScrollContainer/VBoxContainerParent/ClickPower/Button");
-        _purchaseClickPower.Text = $"{GameManager.Instance._clicker.Name} Upgrade\nCost: {GameManager.Instance._clicker.Cost}\nLevel: {GameManager.Instance._clicker.Level}";
-        _purchaseClickPower.Pressed += () => PurchaseUpgrade(GameManager.Instance._clicker, _purchaseClickPower);
-
-        //Auto Clicker SetUp
-        _purchaseAutoClicker = GetNode<Button>("ScrollContainer/VBoxContainer/_purchaseAutoClicker");
-        _purchaseAutoClicker.Text = $"{GameManager.Instance._autoClicker.Name} Upgrade\nCost: {GameManager.Instance._autoClicker.Cost}\nLevel: {GameManager.Instance._autoClicker.Level}";
-        _purchaseAutoClicker.Pressed += () => PurchaseUpgrade(GameManager.Instance._autoClicker, _purchaseAutoClicker);
-*/
 

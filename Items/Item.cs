@@ -3,7 +3,6 @@ using System;
 
 public abstract class Item
 {
-    public static Item Instance;
     public string Name { get; set; }
     public int Power { get; set; }
     public int Cost { get; set; }
@@ -19,16 +18,18 @@ public abstract class Item
         Level = 0;
         CostTrend = 0;
         PowerTrend = 0;
-        Instance = this;
     }
 
-    public virtual void Upgrade()
+    public virtual void Upgrade(Item item)
     {
-        Power *= PowerTrend;
-        Cost *= CostTrend;
-        Level++;
-        GameManager.Instance._cpsContainer.AddCashCPSTotal(Power);
-        GD.Print("Upgrade called");
+        //Item retrievedItem = GameManager.Instance.itemDictionary[item.Name];
+
+        item.Power *= item.PowerTrend;
+        item.Cost *= item.CostTrend;
+        item.Level++;
+        GameManager.Instance._cpsContainer.AddCashCPSTotal(item.Power);
+        //GD.Print($"Upgrade called Name: {retrievedItem.Name}, Power: {retrievedItem.Power}, Cost: {retrievedItem.Cost} Powertrend: {retrievedItem.PowerTrend} ");
+        GD.Print($"Upgrade called Name: {item.Name}, Power: {item.Power}, Cost: {item.Cost} Powertrend: {item.PowerTrend} ");
     }
 
 }

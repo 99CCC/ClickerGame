@@ -184,7 +184,7 @@ alignment = 1
 custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Purchase Money Printer"
+text = "Purchase Stocks"
 horizontal_alignment = 1
 vertical_alignment = 1
 
